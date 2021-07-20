@@ -1,0 +1,32 @@
+@media screen and (max-width: 539px) {
+  body {
+    margin: 40rem 0; //for see the component
+  }
+  .container {
+    margin: 12rem 0;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .card {
+    min-height: 0;
+    padding: 12%;
+    p {
+      letter-spacing: 0.6px;
+      line-height: 2.3rem;
+      height: 115px;
+    }
+
+    &--sedans {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 1rem;
+    }
+
+    &--luxury {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 1rem;
+    }
+  }
+}

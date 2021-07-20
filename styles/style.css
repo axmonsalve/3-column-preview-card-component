@@ -1,0 +1,199 @@
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 400px;
+  max-width: 27.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+}
+
+.card .card-content {
+  max-height: 258px;
+}
+
+.card img {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 2.5rem;
+}
+
+.card h2 {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.3rem;
+  font-weight: lighter;
+  margin-bottom: 5.5rem;
+  letter-spacing: .6px;
+  line-height: 2.3rem;
+  height: 115px;
+}
+
+.card--sedans {
+  background-color: #e38826;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.card--sedans button {
+  color: #e38826;
+}
+
+.card--suvs {
+  background-color: #006970;
+}
+
+.card--suvs button {
+  color: #006970;
+}
+
+.card--luxury {
+  background-color: #004241;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card--luxury button {
+  color: #004241;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #cecece;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 10px 8px -12px rgba(0, 0, 0, 0.88);
+  box-shadow: 0px 10px 8px -12px rgba(0, 0, 0, 0.88);
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 6%;
+  padding-left: 12%;
+  padding-right: 12%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 4px 11px -10px rgba(0, 0, 0, 0.62);
+  box-shadow: 0px 4px 11px -10px rgba(0, 0, 0, 0.62);
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+@media screen and (max-width: 539px) {
+  body {
+    margin: 40rem 0;
+  }
+  .container {
+    margin: 12rem 0;
+  }
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card {
+    min-height: 0;
+    padding: 12%;
+  }
+  .card p {
+    letter-spacing: 0.6px;
+    line-height: 2.3rem;
+    height: 115px;
+  }
+  .card--sedans {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+  }
+  .card--luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  .card p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .card {
+    min-height: 440px;
+  }
+  .card p {
+    line-height: 2rem;
+    letter-spacing: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

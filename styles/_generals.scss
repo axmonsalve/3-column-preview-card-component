@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(206, 206, 206);
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+section {
+  display: flex;
+  -webkit-box-shadow: 0px 10px 8px -12px rgba(0, 0, 0, 0.88);
+  -moz-box-shadow: 0px 10px 8px -12px rgba(0, 0, 0, 0.88);
+  box-shadow: 0px 10px 8px -12px rgba(0, 0, 0, 0.88);
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 6%;
+  padding-left: 12%;
+  padding-right: 12%;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 4px 11px -10px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 0px 4px 11px -10px rgba(0, 0, 0, 0.62);
+  box-shadow: 0px 4px 11px -10px rgba(0, 0, 0, 0.62);
+  &:hover {
+    // background-color: darken($color: #fff, $amount: 3%);
+    background-color: transparent;
+    border: 1px solid $Transparent-white;
+    color: $Transparent-white;
+    transform: scale(1.1);
+  }
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 90%;
+}

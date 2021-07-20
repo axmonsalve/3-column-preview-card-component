@@ -1,0 +1,19 @@
+@media screen and (max-width: 754px) {
+  .card {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 701px) {
+  .card{
+    min-height: 440px;
+    p{
+
+      line-height: 2rem;
+      letter-spacing: 0;
+    }
+  }
+}
